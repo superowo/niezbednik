@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="UTF-8">
+	<title>Niezbędnik</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|EB+Garamond|Spectral+SC:700" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Alegreya&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<div class="py-5">
+   		<div class="container">
+      		<div class="row">
+
+        		<div class="col-md-6">
+        			<!-- Todo -->
+					<div class="app-container">
+						<h3 class="text-center">Lista zadań do wykonania</h3>
+						<section class="new-task-container">
+							<form>
+								<div class="input-group">
+									<input type="text" class="form-control" id="text" placeholder="Nazwa zadania...">
+									<span class="input-group-btn">
+										<button class="btn btn-primary" type="submit">Dodaj zadanie</button>
+									</span>
+								</div>
+							</form>
+						</section>
+						<section class="tasks-container">
+							<ul></ul>
+						</section>
+					</div>
+        		</div>
+
+        		<div class="col-md-3 active">
+        			<!-- Calculator -->
+					<div class="calculator">
+						<input type="text" disabled="disabled" id="answer" value="0"/>
+						<div class="row">
+							<button class="ctrl">AC</button>
+							<button class="ctrl">CE</button>
+							<button>%</button>
+							<button>÷</button>
+						</div>
+						<div class="row">
+							<button>7</button>
+							<button>8</button>
+							<button>9</button>
+							<button>x</button>
+						</div>
+						<div class="row">
+							<button>4</button>
+							<button>5</button>
+							<button>6</button>
+							<button>-</button>
+						</div>
+						<div class="row">
+							<button>1</button>
+							<button>2</button>
+							<button>3</button>
+							<button>+</button>
+						</div>
+						<div class="row">
+						<button>0</button>
+						<button>.</button>
+						<button class="wide">=</button>
+						</div>
+					</div>       			
+        		</div>
+
+        		<div class="col-md-3">
+        			<!-- Calendar -->
+        			<div class="calendar">
+						<div class="row">
+							<div class="month"></div> 
+							<div class="year"></div>
+						</div>
+						<div class="line"></div>
+						<p class="quotation">"Przekleństwa są jedynym językiem który programiści opanowują perfekcyjnie."</p>
+						<div class="day"></div>
+						<div class="day_of_the_week"></div>
+					</div>	
+        		</div>
+      		</div>
+    	</div>
+  	</div>
+	
+	<div class="sticker">
+  		<div class="bar">Notatki</div>
+  		<textarea></textarea>
+  	</div> 
+  
+
+	<script src="js/app_calc.js"></script>
+	<script src="js/app_calendar.js"></script>
+	<script src="js/app_todo.js"></script>
+	<script src="js/modules/tasks.js"></script>
+	<script src="js/modules/new-task.js"></script>
+	<script src="js/modules/tasks-list.js"></script>
+	<script src="js/app_sticker.js"></script>
+
+</body>
+</html>
